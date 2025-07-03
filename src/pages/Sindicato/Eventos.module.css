@@ -1,0 +1,180 @@
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 0 10px #c3d6c3;
+  border-radius: 10px;
+}
+
+.modalFormulario {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fefefe;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  max-width: 500px;
+  width: 95%;
+  z-index: 1000;
+}
+
+.botoesFormulario {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.botoesFormulario button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botoesFormulario button[type="button"] {
+  background-color: gray;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.botoesFormulario button:hover[type="button"] {
+  background-color: #888;
+}
+
+.botoesFormulario button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.botoesFormulario button:hover[type="submit"] {
+  background-color: #388e3c;;
+}
+
+.headerLinha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.botaoNovoEvento {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 30px;
+}
+
+.botaoNovoEvento:hover {
+  background-color: #388e3c;
+}
+
+.listaEventos {
+  margin-top: 10px;
+}
+
+.eventoCard {
+  background: #e9f5ee;
+  border-left: 6px solid #4caf50;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.eventoCard button {
+  margin-right: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.eventoCard button:hover {
+  background-color: #388e3c;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 999; 
+}
+
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  max-width: 400px;
+  width: 90%;
+  z-index: 1000;
+}
+
+.modal h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.modal button {
+  cursor: pointer;
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  float: right;
+  transition: background-color 0.2s ease;
+}
+
+.modal button:hover {
+  background-color: #888;
+}
+
+.modal ul {
+  list-style: none;
+  padding: 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.modal ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.inputLinha {
+  display: flex;
+  align-items: center;
+  
+  margin-top: 5px;
+}
+
+.inputLinha span {
+  min-width: 50px;
+}
+
+.inputLinha input[type="date"] {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+

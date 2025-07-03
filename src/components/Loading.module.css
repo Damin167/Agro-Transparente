@@ -1,0 +1,25 @@
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+  color: #444;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #ccc;
+  border-top-color: #228b22;
+  border-radius: 50%;
+  animation: girar 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
